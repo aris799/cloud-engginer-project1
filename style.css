@@ -1,0 +1,135 @@
+/* Gaya umum */
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+
+/* Bagian header */
+.header {
+    display: flex;
+    align-items: center; /* Membuat konten vertikal terpusat */
+    background-color: #f0f0f0; /* Warna latar belakang header */
+    padding: 20px;
+}
+
+.header .left img {
+    width: 200px; /* Ukuran foto profil */
+    height: 200px;
+    border-radius: 50%; /* Untuk membuat foto profil menjadi lingkaran */
+    margin-right: 30px; /* Margin antara foto profil dan teks biodata */
+    margin-top: 15px;
+}
+
+.header .right {
+    text-align: left;
+}
+.description {
+    font-size: 18px;
+    margin-top: -15px;
+    background: linear-gradient(to right, #ff5f6d, #ffc371); /* Gradasi warna horizontal */
+    -webkit-background-clip: text; /* Efek gradasi hanya berlaku pada teks */
+    color: transparent; /* Membuat teks transparan */
+}
+
+.header .bio-info {
+    margin-top: 10px;
+}
+
+.header .bio-info p {
+    margin: 5px 0;
+    display: flex; /* Menggunakan flexbox untuk menyusun ikon dan teks sejajar */
+    align-items: center; /* Menyusun ikon dan teks secara vertikal */
+}
+
+.header .bio-info img {
+    width: 20px; /* Sesuaikan ukuran ikon */
+    height: 20px;
+    margin-right: 10px; /* Beri jarak antara ikon dan teks */
+}
+
+/* Bagian konten */
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0 ; /* Warna latar belakang konten */
+    padding: 20px;
+}
+
+.content .left, .content .right {
+    width: 45%; /* Lebar masing-masing bagian */
+    margin-left: 20px;
+
+}
+
+/* Gaya untuk judul konten */
+.content h2 {
+    color: #FF5733; /* Warna judul yang menarik */
+    margin-bottom: 10px; /* Memberikan jarak antara judul dan konten di bawahnya */
+}
+
+
+.content p,li {
+    color: #666; /* Warna teks */
+    text-align: justify;
+}
+
+/* Let's Connect */
+.social {
+    background-color: #f0f0f0; /* Warna latar belakang */
+    padding: 20px; /* Menambah padding untuk memberikan ruang di sekitar teks */
+    text-align: center; /* Membuat teks Let's Connect menjadi terpusat */
+}
+
+.connect {
+    color: #333; /* Warna teks */
+    margin-bottom: 30px; /* Memberikan jarak antara judul dan ikon */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.social-icons a {
+    margin: 0 50px; /* Memberikan jarak antara ikon */
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: #e0e0e0;
+    color: #666;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .left img {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content .left, .content .right {
+        width: 100%;
+    }
+}
